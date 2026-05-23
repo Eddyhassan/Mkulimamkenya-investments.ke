@@ -296,6 +296,21 @@ footer i{
 <button class="spin-btn">
 ✨ Spin to Harvest
 </button>
+document.querySelector('.spin-btn').addEventListener('click', function() {
+    const btn = this;
+    btn.innerHTML = 'Harvesting...';
+    btn.style.opacity = '0.7';
+    
+    setTimeout(() => {
+        btn.innerHTML = 'Success!';
+        btn.style.background = '#16a34a';
+        setTimeout(() => {
+            btn.innerHTML = '✨ Spin to Harvest';
+            btn.style.background = 'linear-gradient(to right,#059669,#22c55e)';
+            btn.style.opacity = '1';
+        }, 2000);
+    }, 1500);
+});
 
 </section>
 
