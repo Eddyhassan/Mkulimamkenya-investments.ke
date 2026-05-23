@@ -293,10 +293,6 @@ footer i{
 
 <h4>Total Earnings</h4>
 
-<h2>KSh 525</h2>
-
-<p>Based on 2 active investments</p>
-
 <button class="spin-btn">
 ✨ Spin to Harvest
 </button>
